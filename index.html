@@ -1,54 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>ENU Faculty of Information Technology</title>
-    <style>
+<meta charset="UTF-8">
+<title>ENU Faculty of IT</title>
+
+<style>
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f5f7ff;
-    margin: 20px;
-    color: #222;
+    background: #f4f6fb;
 }
 
-h1 {
-    color: #1a237e;
+/* TOP HEADER */
+.header {
+    background: linear-gradient(90deg, #1a237e, #3949ab);
+    color: white;
+    padding: 25px;
     text-align: center;
 }
 
-h2 {
-    color: #283593;
-    border-bottom: 2px solid #3f51b5;
-    padding-bottom: 5px;
+.header h1 {
+    margin: 0;
 }
 
-img {
-    display: block;
-    margin: 0 auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+/* MENU */
+.nav {
+    background: #283593;
+    text-align: center;
+    padding: 10px;
 }
 
-ul {
+.nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: yellow;
+}
+
+/* HERO IMAGE */
+.hero img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+/* CONTENT */
+.container {
+    padding: 20px;
+}
+
+/* CARDS */
+.card {
     background: white;
     padding: 15px;
+    margin: 10px;
     border-radius: 10px;
-    width: 300px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
+/* TABLE */
 table {
-    border-collapse: collapse;
-    width: 70%;
+    width: 80%;
     margin: auto;
+    border-collapse: collapse;
     background: white;
-}
-
-table, th, td {
-    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 th {
-    background-color: #3f51b5;
+    background: #3949ab;
     color: white;
     padding: 10px;
 }
@@ -56,69 +81,93 @@ th {
 td {
     padding: 10px;
     text-align: center;
+    border-bottom: 1px solid #ddd;
 }
 
-a {
-    color: #1a237e;
-    font-weight: bold;
-    text-decoration: none;
+/* FOOTER */
+.footer {
+    background: #1a237e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
 }
-
-a:hover {
-    color: red;
-}
-
 </style>
+
 </head>
 
-<body style="background-color:#f2f2f2; color:black; font-family:Arial;">
+<body>
 
-    <h1>Faculty of Information Technology - ENU</h1>
+<div class="header">
+    <h1>ENU Faculty of Information Technology</h1>
+    <p>Excellence in Education & Innovation</p>
+</div>
 
-    <!-- Фото факультета -->
-    <img src="https://papik.pro/uploads/posts/2021-11/1636203628_24-papik-pro-p-yenu-logotip-foto-27.jpg"
-         width="450" height="250">
+<div class="nav">
+    <a href="#specialties">Specialties</a>
+    <a href="#table">Information</a>
+    <a href="specialty.html">Information Systems</a>
+</div>
 
-    <hr>
+<div class="hero">
+    <img src="https://enu.kz/storage/app/media/uploaded-files/enu-campus.jpg">
+</div>
 
-    <h2>Specialties</h2>
+<div class="container">
 
-    <ul>
-        <li><a href="specialty.html">Information Systems</a></li>
-        <li>Computer Science</li>
-        <li>Cybersecurity</li>
-        <li>Software Engineering</li>
-    </ul>
+    <div class="card">
+        <h2>About Faculty</h2>
+        <p>
+            The Faculty of Information Technology at ENU prepares students in modern IT fields
+            such as programming, cybersecurity, and data science.
+        </p>
+    </div>
 
-    <h2>Information Table</h2>
+    <div class="card" id="specialties">
+        <h2>Specialties</h2>
+        <ul>
+            <li><a href="specialty.html">Information Systems</a></li>
+            <li>Computer Science</li>
+            <li>Cybersecurity</li>
+            <li>Software Engineering</li>
+        </ul>
+    </div>
 
-    <table border="1" cellpadding="10">
-        <tr>
-            <th>Specialty</th>
-            <th>Duration</th>
-            <th>Degree</th>
-        </tr>
+    <div class="card" id="table">
+        <h2>Study Information</h2>
 
-        <tr>
-            <td>Information Systems</td>
-            <td>4 years</td>
-            <td>Bachelor</td>
-        </tr>
+        <table>
+            <tr>
+                <th>Specialty</th>
+                <th>Duration</th>
+                <th>Degree</th>
+            </tr>
 
-        <tr>
-            <td>Computer Science</td>
-            <td>4 years</td>
-            <td>Bachelor</td>
-        </tr>
+            <tr>
+                <td>Information Systems</td>
+                <td>4 years</td>
+                <td>Bachelor</td>
+            </tr>
 
-        <tr>
-            <td>Cybersecurity</td>
-            <td>4 years</td>
-            <td>Bachelor</td>
-        </tr>
-    </table>
+            <tr>
+                <td>Computer Science</td>
+                <td>4 years</td>
+                <td>Bachelor</td>
+            </tr>
 
-    <p><b>Click on Information Systems to learn more.</b></p>
+            <tr>
+                <td>Cybersecurity</td>
+                <td>4 years</td>
+                <td>Bachelor</td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+<div class="footer">
+    © 2026 ENU Faculty of Information Technology
+</div>
 
 </body>
 </html>
